@@ -115,7 +115,7 @@ const Home = () => {
               <Typography gutterBottom sx={{
                 textTransform: 'uppercase', 
                 fontSize: {xs: '10px', sm: '13px', md: '16px'},
-                letterSpacing: '3px'
+                letterSpacing: '3px', color: 'black'
               }}>Day</Typography>
             <InputBase value={days} 
             onChange={(e) => {const value = e.target.value;
@@ -137,7 +137,7 @@ const Home = () => {
               <Typography gutterBottom sx={{
                 textTransform: 'uppercase', 
                 fontSize: {xs: '10px', sm: '13px', md: '16px'},
-                letterSpacing: '3px'
+                letterSpacing: '3px', color: 'black'
               }}>Month</Typography>
             <InputBase value={months} 
             onChange={(e) => {
@@ -159,7 +159,7 @@ const Home = () => {
               <Typography gutterBottom sx={{
                 textTransform: 'uppercase', 
                 fontSize: {xs: '10px', sm: '13px', md: '16px'},
-                letterSpacing: '3px'
+                letterSpacing: '3px', color: 'black'
               }}>Year</Typography>
             <InputBase value={years} 
             onChange={(e) => setYears(e.target.value)} sx={{
@@ -187,7 +187,8 @@ const Home = () => {
               zIndex: 1,
               position: 'absolute',
               top:{md: '-1.5rem', xs: ''},
-              left: {xs: '100%', md: '50%'}
+              left: {xs: '100%', md: '50%'},
+              backgroundColor: 'purple'
             }} onClick={handleCalculate}>
 
               <AddIcon sx={{
@@ -206,7 +207,7 @@ const Home = () => {
               <Typography 
               sx={{
                 fontSize: {xs: '25px' ,sm: '50px', md: '70px'},
-                fontWeight: 'bold',
+                fontWeight: 'bold', color: 'black'
               }}>years
               </Typography>
             </Stack>
@@ -219,7 +220,7 @@ const Home = () => {
               <Typography 
               sx={{
                 fontSize: {xs: '25px' ,sm: '50px', md: '70px'},
-                fontWeight: 'bold',
+                fontWeight: 'bold', color: 'black'
               }}>
                 months
               </Typography>
@@ -233,7 +234,7 @@ const Home = () => {
               <Typography 
               sx={{
                 fontSize: {xs: '25px' ,sm: '50px', md: '70px'},
-                fontWeight: 'bold',
+                fontWeight: 'bold', color: 'black'
               }}>
                 days
               </Typography>
